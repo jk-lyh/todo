@@ -23,6 +23,7 @@ $(function(){
 		localStorage.todos=JSON.stringify(todos);
 		var c=(todo.state)?'don':'ton';
 		$('<li class='+c+'><div class="con">'+todo.name+'</div><div class="son">删除</div></li>').appendTo('ul');
+		$('.top').css('display','none')
 	})
 	var starpos;
 	$('ul').on('touchstart','li',function(e){
@@ -96,5 +97,12 @@ $(function(){
     	 	}
     	 	todos=newarr;
     	 	localStorage.todos=JSON.stringify(todos);
+    })
+    
+    $('.tj').on('touchend',function(){
+    	$('.top').css('display','block')
+    });
+    $('.qx').on('touchend',function(){
+    	$('.top').css('display','none')
     })
 })

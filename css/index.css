@@ -3,7 +3,9 @@ html {
 
 body {
   font-size: 16px;
-  padding: 0 0.3rem; }
+  padding: 0 0.3rem;
+  background-image: url(../img/bg2.jpg);
+  background-position: center; }
 
 @media screen and (min-width: 320px) {
   html {
@@ -25,42 +27,121 @@ body {
   html {
     font-size: 55.2px; } }
 
-.top {
+.ding {
   width: 100%;
-  height: 1.3rem;
-  background: white;
+  height: 1.2rem;
+  background-image: url(../img/mu.jpg);
   position: relative;
-  margin-bottom: 0.2rem; }
-  .top input {
-    display: block;
+  border-radius: 30px;
+  top: 0.1rem; }
+
+.tou {
+  width: 25%;
+  height: 0.8rem;
+  background: saddlebrown;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 0.8rem;
+  color: white; }
+
+.cd {
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: white;
+  left: 0.2rem; }
+
+.tj {
+  width: 0.5rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: white;
+  right: 0.4rem; }
+
+.top {
+  width: 75%;
+  height: 3rem;
+  background: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 4rem;
+  margin-bottom: 0.2rem;
+  z-index: 99999;
+  display: none;
+  border-radius: 20px; }
+  .top .zjyg {
     width: 100%;
     height: 0.8rem;
-    border: 1px solid silver;
+    line-height: 0.8rem;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #C0C0C0;
+    border-radius: 10px; }
+  .top .qx {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.2rem;
+    text-align: center; }
+  .top input {
+    display: block;
+    width: 90%;
+    height: 0.8rem;
+    border-bottom: 2px solid silver;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto;
-    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
     background: #A7DBF7;
     outline: none; }
   .top .tianjia {
-    width: 0.7rem;
+    width: 80%;
     height: 0.7rem;
-    border-radius: 50%;
     background: red;
+    border-radius: 10px;
     line-height: 0.7rem;
     text-align: center;
     position: absolute;
+    left: 0;
     right: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
     margin: auto;
+    bottom: 0.1rem;
     font-size: 20px;
     color: white; }
 
 .shixiang {
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  top: 1.2rem; }
   .shixiang .ton {
     width: 100%;
     height: 1rem;

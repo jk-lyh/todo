@@ -1,6 +1,9 @@
 $(function(){
 	var input=$(".top input");
 	var add=$(".tianjia");
+//	var add2=$(".tianjia2");
+//	var add3=$(".tianjia3");
+//	var add4=$(".tianjia4");
 	var ul=$(".shijian");
 	var v=$.trim(input.val());
 	var todos=[];
@@ -24,7 +27,47 @@ $(function(){
 		var c=(todo.state)?'don':'ton';
 		$('<li class='+c+'><div class="con">'+todo.name+'</div><div class="son">删除</div></li>').appendTo('ul');
 		$('.top').css('display','none')
-	})
+	});
+//	add2.on('touchend',function(){
+//		v=$.trim(input.val());
+//		var todo={
+//			name:v,
+//			state:0
+//		};
+//		input.val('');
+//		todos.push(todo);
+//		localStorage.todos=JSON.stringify(todos);
+//		var c=(todo.state)?'don':'ton';
+//		$('<li class='+c+2+'><div class="con">'+todo.name+'</div><div class="son">删除</div></li>').appendTo('ul');
+//		$('.top').css('display','none')
+//	});
+//	add3.on('touchend',function(){
+//		v=$.trim(input.val());
+//		var todo={
+//			name:v,
+//			state:0
+//		};
+//		input.val('');
+//		todos.push(todo);
+//		localStorage.todos=JSON.stringify(todos);
+//		var c=(todo.state)?'don':'ton';
+//		$('<li class='+c+3+'><div class="con">'+todo.name+'</div><div class="son">删除</div></li>').appendTo('ul');
+//		$('.top').css('display','none')
+//	});
+//	add4.on('touchend',function(){
+//		v=$.trim(input.val());
+//		var todo={
+//			name:v,
+//			state:0
+//		};
+//		input.val('');
+//		todos.push(todo);
+//		localStorage.todos=JSON.stringify(todos);
+//		var c=(todo.state)?'don':'ton';
+//		$('<li class='+c+4+'><div class="con">'+todo.name+'</div><div class="son">删除</div></li>').appendTo('ul');
+//		$('.top').css('display','none')
+//	})
+	
 	var starpos;
 	$('ul').on('touchstart','li',function(e){
 		starpos=e.originalEvent.changedTouches[0].clientX;
@@ -100,9 +143,29 @@ $(function(){
     })
     
     $('.tj').on('touchend',function(){
-    	$('.top').css('display','block')
-    });
-    $('.qx').on('touchend',function(){
-    	$('.top').css('display','none')
-    })
+		$('.xuanze').css('display','block');
+	})
+	$('.quxiao').on('touchend',function(){
+		$('.xuanze').css('display','none');
+	})
+	
+	$('.xuanze').on('touchend',function(){
+		$('.top').css('display','block')
+		$('.xuanze').css('display','none')
+	})
+//	$('.xuanze2').on('touchend',function(){
+//		$('.top2').css('display','block')
+//		$('.xuanze').css('display','none')
+//	})
+//	$('.xuanze3').on('touchend',function(){
+//		$('.top3').css('display','block')
+//		$('.xuanze').css('display','none')
+//	})
+//	$('.xuanze4').on('touchend',function(){
+//		$('.top4').css('display','block')
+//		$('.xuanze').css('display','none')
+//	})
+	$('.qx').on('touchend',function(){
+		$('.top').css('display','none')
+	})
 })

@@ -119,10 +119,53 @@ body{
         color: white;
     }
 }
+.xuanze{
+    width: 75%;
+    height: 3.2rem;
+    background: white;
+    @include left-right;
+    top: 4rem;
+    margin-bottom: 0.2rem;
+    z-index: 99999;
+//  display: none;
+    border-radius: 20px;
+    display: none;
+    div{
+        width: 50%;
+        height: 0.8rem;
+        float: left;
+        margin-top: 0.3rem;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 0.8rem;
+        color: white;
+    }
+}
+.xuanze1{
+    background: seagreen;
+}
+.xuanze2{
+    background: #E54017;
+}
+.xuanze3{
+    background: #0F39AA;
+}
+.xuanze4{
+    background: #05A7ED;
+}
+.quxiao{
+    width: 80%;
+    height: 0.7rem;
+    @include left-right;
+    bottom: 0.1rem;
+    background: red;
+}
 .shixiang{
     width: 100%;
+    height: 8.2rem;
     position: relative;
     top: 1.2rem;
+    overflow: scroll;
     .ton{
         width: 100%;
         height: 1rem;
@@ -180,6 +223,18 @@ body{
             right:0.1rem;
         }
     }
+//  .ton1{
+//      background: seagreen;
+//  }
+//  .ton2{
+//      background: #E54017;
+//  }
+//  .ton3{
+//      background: #0F39AA;
+//  }
+//  .ton4{
+//      background: #05A7ED;
+//  }
 }
 
 .foo{
@@ -242,4 +297,6 @@ body{
     text-align: center;
     background: #55F0B4;
     border-radius: 10px;
+    @include left-right;
+    bottom: 2rem;
 }

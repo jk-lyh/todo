@@ -8,11 +8,19 @@ $(function(){
 	var v=$.trim(input.val());
 	var todos=[];
 	
+	var d = new Date(new Date().getTime());
+//alert(d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate()+" "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds());
+    var s=d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDate()+" "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()
+	
+	
+	
+	
+	
 	if(localStorage.todos){
 		todos=JSON.parse(localStorage.todos);
 		for(var i=0;i<todos.length;i++){
 			var c=(todos[i].state)?'don':'ton';
-			$("<li class="+c+"><div class='con'>"+todos[i].name+"<div class='son'>删除</li>").appendTo('ul');
+			$("<li class="+c+"><div class='con'>"+todos[i].name+"</div><div class='son'>删除</div></li>").appendTo('ul');
 		}
 	}
 	add.on('touchend',function(){
@@ -144,12 +152,12 @@ $(function(){
     
     $('.tj').on('touchend',function(){
 		$('.xuanze').css('display','block');
-	})
+	});
 	$('.quxiao').on('touchend',function(){
 		$('.xuanze').css('display','none');
-	})
+	});
 	
-	$('.xuanze').on('touchend',function(){
+	$('.xuanze').on('touchend','div',function(){
 		$('.top').css('display','block')
 		$('.xuanze').css('display','none')
 	})
@@ -168,4 +176,10 @@ $(function(){
 	$('.qx').on('touchend',function(){
 		$('.top').css('display','none')
 	})
+	
+	
+	
+	
+	
+	
 })

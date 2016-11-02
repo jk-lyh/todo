@@ -73,7 +73,7 @@ body{
     top: 4rem;
     margin-bottom: 0.2rem;
     z-index: 99999;
-    display: none;
+//  display: none;
     border-radius: 20px;
     .zjyg{
         width: 100%;
@@ -118,6 +118,18 @@ body{
         font-size: 20px;
         color: white;
     }
+}
+.top1{
+    display: none;
+}
+.top2{
+    display: none;
+}
+.top3{
+    display: none;
+}
+.top4{
+    display: none;
 }
 .xuanze{
     width: 75%;
@@ -313,4 +325,70 @@ body{
     border-radius: 10px;
     @include left-right;
     bottom: 2rem;
+}
+
+.mbx{
+    width: 50%;
+    height: 100%;
+    background-image: url(../img/mbx.jpg);
+    @include top-bottom;
+    left: 0;
+    z-index: 99999;
+    opacity: 0.8;
+    display: none;
+    .tx{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        @include left-right;
+        top: 1rem;
+    }
+    .fh{
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        right: 0.2rem;
+        top: 0.2rem;
+        text-align: center;
+        line-height: 0.8rem;
+        border-radius: 50%;
+        color: rgba(255,255,255,0.6);
+    }
+    .jinj{
+        width: 100%;
+        height: 1rem;
+        font-size: 18px;
+        text-align: left;
+        line-height: 1rem;
+        background: rgba(0,0,0,0.3);
+//      font-weight: bold;
+        color: rgba(255,255,255,0.5);
+        border-radius: 15px;
+    }
+    .jinj1{
+        position: absolute;
+        left: 0;
+        top: 4rem;
+    }
+    .jinj2{
+        position: absolute;
+        left: 0;
+        top: 5.2rem;
+    }
+    .jinj3{
+        position: absolute;
+        left: 0;
+        top: 6.4rem;
+    }
+    .jinj4{
+        position: absolute;
+        left: 0;
+        top: 7.6rem;
+    }
+    .ss{
+        width: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
